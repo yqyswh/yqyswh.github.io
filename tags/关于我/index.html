@@ -42,6 +42,17 @@
         .swal2-styled.swal2-confirm {
           font-size: 1.6rem;
         }
+        <link rel="stylesheet" href="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.css"><!--我的APlayer的样式-->
+        <script src="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.js"></script><!--APlayer的依赖-->
+        <script src="https://unpkg.com/meting@2/dist/Meting.min.js"></script><!--Meting的依赖-->
+        <meting-js
+        server="tencent"
+        type="playlist"
+        autoplay=false 
+        fixed=true 
+        lrc-type=0
+        id="2827580661"> 
+        </meting-js> 
       </style>
       <meta name="google-site-verification" content="7kMLHIEzurnvx_XCIGgXlwtF5eS0q5TE8EnRTFJwqSg" />
     </head>
@@ -211,6 +222,10 @@
       <a class="nav-item-link" href="/year/11/06/about">关于我</a>
     </li>
     
+    <li class="nav-item">
+      <a class="nav-item-link" href="/player">播放器</a>
+    </li>
+    
   </ul>
 </nav>
 <nav class="navbar navbar-bottom">
@@ -356,6 +371,23 @@
 </script>
 
 
+    
+    <div id="music">
+    
+    
+    
+    <iframe frameborder="no" border="1" marginwidth="0" marginheight="0" width="200" height="52"
+        src="//music.163.com/outchain/player?type=2&id=22707008&auto=1&height=32"></iframe>
+</div>
+
+<style>
+    #music {
+        position: fixed;
+        right: 15px;
+        bottom: 0;
+        z-index: 998;
+    }
+</style>
     
     
 
